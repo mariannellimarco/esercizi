@@ -45,18 +45,18 @@ if (metodo==1) {
 
 if(metodo==2){
 
+//char alfabeto[]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
 printf("\nAlfabeto mescolato : ");
 scanf("%s", alfabeto_mescolato);
-k=strlen(alfabeto_mescolato);
+printf("\ncyphertext : ");
 
-//if (isalpha(alfabeto_mescolato) && islower(alfabeto_mescolato)) {
-//for (k = 0; k < strlen(alfabeto_mescolato); k++) {
+
+if (isalpha(alfabeto_mescolato) && islower(alfabeto_mescolato)) {
 for (i = 0; i < strlen(stringa); i++) {
-  alfabeto_mescolato[i]=alfabeto_mescolato[i%k]-'a';
-  stringa[i]=stringa[i]+alfabeto_mescolato[i];
-  printf("%d\n", stringa[i]);
+  stringa2[i]=alfabeto_mescolato[i]-stringa[i];
 }
 
+  printf("%d\n", stringa2[i]);
 
 
 }

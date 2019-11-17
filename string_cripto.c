@@ -53,11 +53,11 @@ printf("\ncyphertext : ");
 
 if (isalpha(alfabeto_mescolato) && islower(alfabeto_mescolato)) {
 for (i = 0; i < strlen(stringa); i++) {
-  stringa2[i]=alfabeto_mescolato[i]-stringa[i];
+  stringa[i]=alfabeto_mescolato[i]-stringa[i];
 }
 
   printf("%d\n", stringa2[i]);
-
+}
 
 }
 
